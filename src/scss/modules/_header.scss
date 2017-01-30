@@ -1,0 +1,39 @@
+.header {
+    height: 200px;
+    font-family: font(header);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-maintitle {
+    font-size: 100px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.header-social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-social ul li {
+    display: inline-block;
+}
+
+.header .fa {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header-social ul li .fa {
+    padding: 8px;
+}
+
+.social-divider {
+    border-right: 1px solid color(light);
+}

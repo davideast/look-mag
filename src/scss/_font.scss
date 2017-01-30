@@ -1,0 +1,17 @@
+.smallcaps {
+  font-family: font(smallcaps);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.header-headlinecaption {
+  font-family: font(header);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.font-white {
+  color: color(primary);
+}

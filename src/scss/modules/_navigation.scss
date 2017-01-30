@@ -1,0 +1,27 @@
+.navigation {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    height: 63px;
+    line-height: 63px;
+}
+
+.navigation ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.navigation ul li:last-child {
+    padding-right: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: color(secondary);
+}

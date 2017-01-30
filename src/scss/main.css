@@ -1,0 +1,127 @@
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-light: #f0f0f0;
+  --color-dark: #202020;
+  --font-header: "bodoni-urw";
+  --font-main: "raleway";
+  --font-smallcaps: "raleway"; }
+
+.smallcaps {
+  font-family: var(--font-smallcaps);
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase; }
+
+.header-headlinecaption {
+  font-family: var(--font-header);
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.font-white {
+  color: var(--color-primary); }
+
+/* Base */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  margin: 0; }
+
+.grid {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 100px; }
+
+.fix-right {
+  position: absolute;
+  top: 50%;
+  right: 0; }
+
+.fix-left {
+  position: absolute;
+  top: 50%;
+  left: 0; }
+
+.storybox {
+  background: linear-gradient(to bottom, #7d7e7d 61%, #2d2d2d 100%);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.header {
+  height: 200px;
+  font-family: var(--font-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.header-maintitle {
+  font-size: 100px;
+  font-weight: lighter;
+  text-transform: uppercase; }
+
+.header-social ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center; }
+
+.header-social ul li {
+  display: inline-block; }
+
+.header .fa {
+  cursor: pointer;
+  font-size: 18px; }
+
+.header-social ul li .fa {
+  padding: 8px; }
+
+.social-divider {
+  border-right: 1px solid var(--color-light); }
+
+.navigation {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  line-height: 63px; }
+
+.navigation ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0; }
+
+.navigation ul li {
+  display: inline-block;
+  padding-right: 30px; }
+
+.navigation ul li:last-child {
+  padding-right: 0; }
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--color-secondary); }
+
+.headline {
+  height: 480px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .headline .headline-caption {
+    width: 440px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 16px; }
+    .headline .headline-caption .headline-captiontitle {
+      padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */

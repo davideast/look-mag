@@ -1,0 +1,17 @@
+.grid {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.fix-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.fix-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}

@@ -1,8 +1,28 @@
+$accent: rgba(88, 198, 194, 1);
+
 .smallcaps {
   font-family: font(smallcaps);
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
+
+  &.smallcaps-accentheader {
+    color: $accent;
+
+    &::after {
+      border-bottom: 1px solid $accent;
+      content: '';
+      display: block;
+      height: 4px;
+    }
+
+  }
+}
+
+.cursive {
+  color: rgba(178, 178, 178, 1);
+  font-family: font(header);
+  font-size: 11px;
 }
 
 .header-headlinecaption {
@@ -10,6 +30,13 @@
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.header-captiontitle {
+  font-family: font(header);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .font-white {

@@ -1,0 +1,26 @@
+@import '../variables';
+$grey-lighter: rgba(237, 237, 237, 1);
+
+.look-caption {
+    border-bottom: 1px solid $grey-lighter;
+    padding: 40px;
+}
+
+.look-caption-tile,
+.look-caption-subtitle {
+    padding: 30px;
+}
+
+.look-caption-medium {
+    background: white;
+    font-family: "bodoni-urw";
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 18px;
+    position: relative;
+    top: -50px;
+    left: 15%;
+    width: 60%;
+}

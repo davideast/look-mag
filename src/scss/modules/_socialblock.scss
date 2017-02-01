@@ -1,0 +1,42 @@
+
+.look-socialblock {
+    color: white;
+    height: 38px;
+    text-decoration: none;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'raleway';
+    font-size: 11px;
+    padding: 0 15px;
+    position: relative;
+
+    &.look-socialblock-twitter {
+        background: rgba(0, 172, 237, 1);
+    }
+
+    &.look-socialblock-pintrest {
+        background: rgba(202, 0, 51, 1);
+    }
+
+    &.look-socialblock-instagram {
+        background: rgba(112, 86, 195, 1);
+    }
+
+    .look-socialblock .fa {
+        height: 16px;
+        width: 16px;
+        font-size: 16px !important;
+    }
+
+    .look-socialblock-title {
+        position: absolute;
+        left: 38px;
+    }
+
+    .look-socialblock-action {
+        text-transform: uppercase;
+    }
+
+}

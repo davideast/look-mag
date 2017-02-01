@@ -4,14 +4,85 @@
   padding: 0 100px;
 }
 
+.grid-gutterbottom {
+  margin-bottom: 92px;
+}
+
+.grid-guttertop {
+  margin-top: 92px;
+}
+
+.grid-gutters {
+  margin: 92px auto;
+}
+
+.layout {
+    display: flex;
+
+    .layout-horizontal {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .layout-vertical {
+        flex-direction: column;
+    }
+
+    .layout-total-center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &.layout-huge {
+        height: 700px;
+    }
+
+    &.layout-headline {
+        height: 618px;
+    }
+
+    &.layout-medium {
+        height: 310px;
+    }
+
+    &.layout-small {
+        height: 200px;
+    }
+
+    &.layout-micro {
+        height: 80px;
+    }
+
+}
+
+.layout-large {
+  height: 550px;
+}
+
+.maincontent {
+    width: 72%;
+    padding-right: 60px;
+}
+
+.sidecontent {
+    width: 28%;
+    min-height: 100vh;
+}
+
+.look-socialside {
+    position: relative;
+    top: -80px;
+}
+
 .fix-right {
-  position: absolute;
-  top: 50%;
-  right: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .fix-left {
-  position: absolute;
-  top: 50%;
-  left: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }

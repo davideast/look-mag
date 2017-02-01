@@ -201,9 +201,11 @@ h1, h2, h3, h4, h5 {
   border-bottom: 1px solid #ededed;
   padding: 40px; }
 
-.look-caption-tile,
-.look-caption-subtitle {
+.look-caption-tile {
   padding: 30px; }
+
+.look-caption-subtitle {
+  padding: 0 30px 30px 30px; }
 
 .look-caption-medium {
   background: white;

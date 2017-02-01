@@ -6,9 +6,12 @@ $grey-lighter: rgba(237, 237, 237, 1);
     padding: 40px;
 }
 
-.look-caption-tile,
-.look-caption-subtitle {
+.look-caption-tile {
     padding: 30px;
+}
+
+.look-caption-subtitle {
+    padding: 0 30px 30px 30px;
 }
 
 .look-caption-medium {

@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../helpers";
+
+$look-grey-border: rgba(237, 237, 237, 1);
+
+.look-accentbox {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid $look-grey-border;
+  position: relative;
+
+  .look-accentbox-topborder {
+    height: 4px;
+    background-color: color(red-accent);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  *:not(.look-accentbox-topborder),
+  *:not(.look-btn) {
+    margin-bottom: 25px;
+  }
+
+  .look-subscribe-btn {
+    position: absolute;
+    bottom: -21px;
+    align-self: center;
+    margin: 0;
+  }
+}

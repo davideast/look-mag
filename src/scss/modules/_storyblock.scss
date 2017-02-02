@@ -1,0 +1,16 @@
+.look-storyblock {
+
+  &.look-storyblock-side {
+      margin-top: 25px;
+
+      .storybox {
+          box-sizing: border-box;
+          margin-right: 12px;
+      }
+
+      .look-storyblock-side-category {
+          margin-top: 15px;
+      }
+  }
+
+}

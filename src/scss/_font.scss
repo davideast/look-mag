@@ -39,6 +39,48 @@ $accent: rgba(88, 198, 194, 1);
   font-weight: normal;
 }
 
+.look-font-headerregular {
+  font-family: font(header);
+  font-size: 18px;
+
+  &.look-font-headerregular-border {
+      &::after {
+        border-bottom: 1px solid black;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 50px;
+      }
+  }
+
+}
+
 .font-white {
   color: color(primary);
+}
+
+.look-subtitleborder {
+  font-family: font(smallcaps);
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(65, 65, 65, 1);
+
+  .look-subtitleborder-border {
+    background: rgba(242, 242, 242, 1);
+    height: 4px;
+    width: 70%;
+  }
+}
+
+.look-smalltitle {
+  font-family: font(header);
+  font-size: 15px;
+}
+
+.look-font-microcaps {
+  color: rgba(188, 188, 188, 1);
+  font-family: font(smallcaps);
+  font-size: 10px;
+  font-weight: bold;
 }

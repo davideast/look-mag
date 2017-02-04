@@ -16,6 +16,10 @@
   margin: 92px auto;
 }
 
+.look-section {
+    padding: 42px 0;
+}
+
 .layout {
     display: flex;
 
@@ -140,4 +144,19 @@
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+/*
+    Design weirdness. The last item in the second content section, has
+    no border bottom.
+*/
+.look-beautycontent {
+    padding-bottom: 0;
+    .look-storyblock:last-child {
+        border-bottom: 0;
+    }
+}
+
+.icon-spaceleft {
+    padding-left: 10px;
 }

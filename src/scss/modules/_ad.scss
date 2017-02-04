@@ -1,0 +1,11 @@
+@import '../variables';
+@import '../helpers';
+
+.look-ad {
+  background: color(grey-normal);
+  color: color(grey-dark);
+  font-family: font(main);
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 110px;
+}

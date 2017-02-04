@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../helpers";
+
+.look-separator {
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  &.look-separator-grey {
+    background-color: color(grey-normal);
+  }
+
+}

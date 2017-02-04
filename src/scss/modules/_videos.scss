@@ -1,0 +1,42 @@
+.look-videos {
+    position: relative;
+
+    .look-videos-header {
+        padding: 30px 0;
+    }
+
+    .look-video-list-item {
+      .storybox {
+        background-image: url(/assets/video-play.png);
+        background-repeat:no-repeat;
+        background-position: center center;
+        min-width: 255px; //TODO: fix this hack
+      }
+    }
+
+    .look-videos-caption {
+        align-self: center;
+        background: white;
+        font-family: "bodoni-urw";
+        font-weight: 600;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 12px;
+        position: relative;
+        top: -36px;
+        width: 80%;
+        text-align: center;
+
+        &.look-videos-caption-pronounced {
+            border: 2px solid black;
+        }
+    }
+
+    .look-video-list-item {
+        margin-right: 30px;
+    }
+
+    .look-video-list-item:last-child {
+        margin-right: 0;
+    }
+}

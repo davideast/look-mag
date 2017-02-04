@@ -5,6 +5,8 @@
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -16,6 +18,10 @@
   text-transform: uppercase; }
   .smallcaps.smallcaps-light {
     font-weight: 400; }
+  .smallcaps.smallcaps-dark {
+    color: #343434; }
+  .smallcaps.smallcaps-large {
+    font-size: 16px; }
   .smallcaps.smallcaps-borderleft {
     margin: 0 10px; }
     .smallcaps.smallcaps-borderleft::before {
@@ -124,6 +130,10 @@ ul {
   margin: 0;
   padding: 0; }
 
+a, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
 .grid {
   max-width: 1170px;
   margin: 0 auto;
@@ -137,6 +147,9 @@ ul {
 
 .grid-gutters {
   margin: 92px auto; }
+
+.look-section {
+  padding: 42px 0; }
 
 .layout {
   display: flex; }
@@ -227,6 +240,18 @@ ul {
   position: absolute;
   top: 50%;
   left: 0; }
+
+/*
+    Design weirdness. The last item in the second content section, has
+    no border bottom.
+*/
+.look-beautycontent {
+  padding-bottom: 0; }
+  .look-beautycontent .look-storyblock:last-child {
+    border-bottom: 0; }
+
+.icon-spaceleft {
+  padding-left: 10px; }
 
 .storybox {
   background: #7d7e7d;
@@ -333,6 +358,8 @@ ul {
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -393,6 +420,8 @@ ul {
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -425,6 +454,8 @@ ul {
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -445,5 +476,76 @@ ul {
   justify-content: center; }
   .look-btn.look-btn-action {
     background-color: var(--color-red-accent); }
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-light: #f0f0f0;
+  --color-dark: #202020;
+  --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
+  --font-header: "bodoni-urw";
+  --font-main: "raleway";
+  --font-smallcaps: "raleway"; }
+
+.look-separator {
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+  .look-separator.look-separator-grey {
+    background-color: var(--color-grey-normal); }
+
+.look-videos {
+  position: relative; }
+  .look-videos .look-videos-header {
+    padding: 30px 0; }
+  .look-videos .look-video-list-item .storybox {
+    background-image: url(/assets/video-play.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-width: 255px; }
+  .look-videos .look-videos-caption {
+    align-self: center;
+    background: white;
+    font-family: "bodoni-urw";
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 12px;
+    position: relative;
+    top: -36px;
+    width: 80%;
+    text-align: center; }
+    .look-videos .look-videos-caption.look-videos-caption-pronounced {
+      border: 2px solid black; }
+  .look-videos .look-video-list-item {
+    margin-right: 30px; }
+  .look-videos .look-video-list-item:last-child {
+    margin-right: 0; }
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-light: #f0f0f0;
+  --color-dark: #202020;
+  --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
+  --font-header: "bodoni-urw";
+  --font-main: "raleway";
+  --font-smallcaps: "raleway"; }
+
+.look-ad {
+  background: var(--color-grey-normal);
+  color: var(--color-grey-dark);
+  font-family: var(--font-main);
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 110px; }
 
 /*# sourceMappingURL=main.css.map */

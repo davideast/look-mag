@@ -1,0 +1,34 @@
+@import '../variables';
+@import '../helpers';
+
+.look-pager {
+  .look-pager-number {
+      margin-right: 8px;
+      a {
+          color: color(black-light);
+          height: 44px;
+          width: 44px;
+          border-radius: 100px;
+          font-family: 'raleway';
+          font-size: 14px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid color(grey-lighter);
+      }
+
+      &.look-pager-number-active a {
+          background: color(red-accent);
+          border: 0;
+          color: white;
+      }
+
+      &.look-pager-number-more a {
+          border: 0;
+          cursor: none;
+          pointer-events: none;
+          width: 22px;
+      }
+  }
+}

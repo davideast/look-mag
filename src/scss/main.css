@@ -3,6 +3,7 @@
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -33,6 +34,10 @@
     color: #58c6c2; }
   .smallcaps.smallcaps-beauty {
     color: #fd885d; }
+  .smallcaps.smallcaps-travel {
+    color: #497ece; }
+  .smallcaps.smallcaps-celebrity {
+    color: #c4093e; }
   .smallcaps.smallcaps-blend {
     color: #bcbcbc; }
   .smallcaps.smallcaps-alt {
@@ -248,10 +253,13 @@ a, a:visited {
 .look-beautycontent {
   padding-bottom: 0; }
   .look-beautycontent .look-storyblock:last-child {
-    border-bottom: 0; }
+    border-bottom: 0 !important; }
 
 .icon-spaceleft {
   padding-left: 10px; }
+
+.look-nobottomborder {
+  border-bottom: 0 !important; }
 
 .storybox {
   background: #7d7e7d;
@@ -356,6 +364,7 @@ a, a:visited {
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -418,6 +427,7 @@ a, a:visited {
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -452,6 +462,7 @@ a, a:visited {
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -482,6 +493,7 @@ a, a:visited {
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -532,6 +544,7 @@ a, a:visited {
   --color-secondary: #000000;
   --color-light: #f0f0f0;
   --color-dark: #202020;
+  --color-black-light: #5c5c5c;
   --color-red-accent: #dd4b39;
   --color-grey-lighter: #ededed;
   --color-grey-normal: #f2f2f2;
@@ -547,5 +560,43 @@ a, a:visited {
   font-size: 16px;
   text-transform: uppercase;
   height: 110px; }
+
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-light: #f0f0f0;
+  --color-dark: #202020;
+  --color-black-light: #5c5c5c;
+  --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
+  --color-grey-normal: #f2f2f2;
+  --color-grey-dark: #bcbbbb;
+  --font-header: "bodoni-urw";
+  --font-main: "raleway";
+  --font-smallcaps: "raleway"; }
+
+.look-pager .look-pager-number {
+  margin-right: 8px; }
+  .look-pager .look-pager-number a {
+    color: var(--color-black-light);
+    height: 44px;
+    width: 44px;
+    border-radius: 100px;
+    font-family: 'raleway';
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-grey-lighter); }
+  .look-pager .look-pager-number.look-pager-number-active a {
+    background: var(--color-red-accent);
+    border: 0;
+    color: white; }
+  .look-pager .look-pager-number.look-pager-number-more a {
+    border: 0;
+    cursor: none;
+    pointer-events: none;
+    width: 22px; }
 
 /*# sourceMappingURL=main.css.map */

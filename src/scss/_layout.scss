@@ -153,10 +153,14 @@
 .look-beautycontent {
     padding-bottom: 0;
     .look-storyblock:last-child {
-        border-bottom: 0;
+        border-bottom: 0 !important;
     }
 }
 
 .icon-spaceleft {
     padding-left: 10px;
+}
+
+.look-nobottomborder {
+    border-bottom: 0 !important;
 }

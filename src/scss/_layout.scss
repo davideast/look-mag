@@ -35,6 +35,10 @@
       justify-content: space-between;
     }
 
+    .layout-centervertical {
+        align-items: center;
+    }
+
     &.layout-huge {
         height: 700px;
     }
@@ -42,10 +46,6 @@
     &.layout-headline {
         height: 618px;
         width: 100%;
-    }
-
-    &.layout-medium {
-        height: 310px;
     }
 
 }
@@ -56,6 +56,10 @@
     height: 100px;
   }
 
+}
+
+.look-contentsection {
+    padding-bottom: 40px;
 }
 
 .layout-horizontal-center {
@@ -89,6 +93,14 @@
 
 .layout-small {
     height: 200px;
+}
+
+.layout-medium {
+    height: 310px;
+}
+
+.layout-widthmedium {
+    min-width: 395px;
 }
 
 .layout-inlineblock {

@@ -1,4 +1,8 @@
 $accent: rgba(88, 198, 194, 1);
+$beauty: rgba(253, 136, 93, 1);
+$grey-lighter: rgba(188, 188, 188, 1);
+$off-black: rgba(51, 51, 51, 1);
+$alt-black: rgba(90, 90, 90, 1);
 
 .smallcaps {
   font-family: font(smallcaps);
@@ -6,11 +10,54 @@ $accent: rgba(88, 198, 194, 1);
   font-size: 11px;
   text-transform: uppercase;
 
+  &.smallcaps-light {
+    font-weight: 400;
+  }
+
+  &.smallcaps-borderleft {
+      margin: 0 10px;
+
+      &::before {
+        border-left: 1px solid #bcbcbc;
+        content: '';
+        flex-direction: row;
+        margin-right: 10px;
+      }
+  }
+
+  &.smallcaps-accent {
+    color: $accent;
+  }
+
+  &.smallcaps-beauty {
+    color: $beauty;
+  }
+
+  &.smallcaps-blend {
+    color: $grey-lighter;
+  }
+
+  &.smallcaps-alt {
+    color: $alt-black;
+  }
+
   &.smallcaps-accentheader {
     color: $accent;
 
     &::after {
       border-bottom: 1px solid $accent;
+      content: '';
+      display: block;
+      height: 4px;
+    }
+
+  }
+
+  &.smallcaps-beautyheader {
+    color: $beauty;
+
+    &::after {
+      border-bottom: 1px solid $beauty;
       content: '';
       display: block;
       height: 4px;
@@ -39,6 +86,13 @@ $accent: rgba(88, 198, 194, 1);
   font-weight: normal;
 }
 
+.header-contenttitle {
+  font-family: font(header);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
 .look-font-headerregular {
   font-family: font(header);
   font-size: 18px;
@@ -57,6 +111,14 @@ $accent: rgba(88, 198, 194, 1);
 
 .font-white {
   color: color(primary);
+}
+
+.look-text-regular {
+  color: $off-black;
+  font-family: font(smallcaps);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
 }
 
 .look-subtitleborder {

@@ -4,6 +4,7 @@
   --color-light: #f0f0f0;
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -13,10 +14,34 @@
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase; }
+  .smallcaps.smallcaps-light {
+    font-weight: 400; }
+  .smallcaps.smallcaps-borderleft {
+    margin: 0 10px; }
+    .smallcaps.smallcaps-borderleft::before {
+      border-left: 1px solid #bcbcbc;
+      content: '';
+      flex-direction: row;
+      margin-right: 10px; }
+  .smallcaps.smallcaps-accent {
+    color: #58c6c2; }
+  .smallcaps.smallcaps-beauty {
+    color: #fd885d; }
+  .smallcaps.smallcaps-blend {
+    color: #bcbcbc; }
+  .smallcaps.smallcaps-alt {
+    color: #5a5a5a; }
   .smallcaps.smallcaps-accentheader {
     color: #58c6c2; }
     .smallcaps.smallcaps-accentheader::after {
       border-bottom: 1px solid #58c6c2;
+      content: '';
+      display: block;
+      height: 4px; }
+  .smallcaps.smallcaps-beautyheader {
+    color: #fd885d; }
+    .smallcaps.smallcaps-beautyheader::after {
+      border-bottom: 1px solid #fd885d;
       content: '';
       display: block;
       height: 4px; }
@@ -38,6 +63,12 @@
   text-transform: uppercase;
   font-weight: normal; }
 
+.header-contenttitle {
+  font-family: var(--font-header);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: normal; }
+
 .look-font-headerregular {
   font-family: var(--font-header);
   font-size: 18px; }
@@ -50,6 +81,13 @@
 
 .font-white {
   color: var(--color-primary); }
+
+.look-text-regular {
+  color: #333333;
+  font-family: var(--font-smallcaps);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px; }
 
 .look-subtitleborder {
   font-family: var(--font-smallcaps);
@@ -78,7 +116,7 @@ html, body {
   width: 100%;
   margin: 0; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   margin: 0; }
 
 ul {
@@ -112,16 +150,19 @@ ul {
   .layout .layout-centerandedges {
     align-items: center;
     justify-content: space-between; }
+  .layout .layout-centervertical {
+    align-items: center; }
   .layout.layout-huge {
     height: 700px; }
   .layout.layout-headline {
     height: 618px;
     width: 100%; }
-  .layout.layout-medium {
-    height: 310px; }
 
 .look-storyblock.look-storyblock-side {
   height: 100px; }
+
+.look-contentsection {
+  padding-bottom: 40px; }
 
 .layout-horizontal-center {
   display: flex;
@@ -149,6 +190,12 @@ ul {
 
 .layout-small {
   height: 200px; }
+
+.layout-medium {
+  height: 310px; }
+
+.layout-widthmedium {
+  min-width: 395px; }
 
 .layout-inlineblock {
   display: inline-block; }
@@ -194,6 +241,20 @@ ul {
     margin-right: 12px; }
   .look-storyblock.look-storyblock-side .look-storyblock-side-category {
     margin-top: 15px; }
+.look-storyblock.look-storyblock-content {
+  box-sizing: border-box;
+  height: 395px;
+  padding: 40px 0; }
+  .look-storyblock.look-storyblock-content .storybox {
+    margin-right: 40px; }
+  .look-storyblock.look-storyblock-content .look-storyblock-content-caption {
+    width: 100%; }
+  .look-storyblock.look-storyblock-content .look-storyblock-content-caption-title {
+    padding: 24px 0; }
+  .look-storyblock.look-storyblock-content .look-storyblock-content-para {
+    padding: 0 0 24px 0; }
+  .look-storyblock.look-storyblock-content .look-sharecount .look-sharecount-image {
+    margin-right: 10px; }
 
 .header {
   height: 200px;
@@ -271,21 +332,20 @@ ul {
   --color-light: #f0f0f0;
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
 
 .look-caption {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid var(--color-grey-lighter);
   padding: 40px; }
 
 .look-caption-tile {
-  padding: 30px; }
-
-.look-caption-subtitle {
-  padding: 0 30px 30px 30px; }
+  padding: 27px 30px; }
 
 .look-caption-medium {
+  align-self: center;
   background: white;
   font-family: "bodoni-urw";
   font-weight: 600;
@@ -295,7 +355,6 @@ ul {
   padding: 18px;
   position: relative;
   top: -50px;
-  left: 15%;
   width: 60%; }
 
 .look-socialblock {
@@ -333,6 +392,7 @@ ul {
   --color-light: #f0f0f0;
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }
@@ -364,6 +424,7 @@ ul {
   --color-light: #f0f0f0;
   --color-dark: #202020;
   --color-red-accent: #dd4b39;
+  --color-grey-lighter: #ededed;
   --font-header: "bodoni-urw";
   --font-main: "raleway";
   --font-smallcaps: "raleway"; }

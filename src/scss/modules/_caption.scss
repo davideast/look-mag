@@ -1,20 +1,17 @@
 @import '../variables';
-$grey-lighter: rgba(237, 237, 237, 1);
+@import '../helpers';
 
 .look-caption {
-    border-bottom: 1px solid $grey-lighter;
+    border-bottom: 1px solid color(grey-lighter);
     padding: 40px;
 }
 
 .look-caption-tile {
-    padding: 30px;
-}
-
-.look-caption-subtitle {
-    padding: 0 30px 30px 30px;
+    padding: 27px 30px;
 }
 
 .look-caption-medium {
+    align-self: center;
     background: white;
     font-family: "bodoni-urw";
     font-weight: 600;
@@ -24,6 +21,5 @@ $grey-lighter: rgba(237, 237, 237, 1);
     padding: 18px;
     position: relative;
     top: -50px;
-    left: 15%;
     width: 60%;
 }

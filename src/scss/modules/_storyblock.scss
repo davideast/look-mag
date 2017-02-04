@@ -13,4 +13,31 @@
       }
   }
 
+  &.look-storyblock-content {
+      box-sizing: border-box;
+      height: 395px;
+      padding: 40px 0;
+
+      .storybox {
+          margin-right: 40px;
+      }
+
+      .look-storyblock-content-caption {
+          width: 100%;
+      }
+
+      .look-storyblock-content-caption-title  {
+          padding: 24px 0;
+      }
+
+      .look-storyblock-content-para {
+          padding: 0 0 24px 0;
+      }
+
+      .look-sharecount .look-sharecount-image {
+          margin-right: 10px;
+      }
+
+  }
+
 }

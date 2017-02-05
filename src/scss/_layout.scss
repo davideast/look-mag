@@ -1,19 +1,19 @@
 .grid {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 100px;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 100px;
 }
 
 .grid-gutterbottom {
-  margin-bottom: 92px;
+    margin-bottom: 92px;
 }
 
 .grid-guttertop {
-  margin-top: 92px;
+    margin-top: 92px;
 }
 
 .grid-gutters {
-  margin: 92px auto;
+    margin: 92px auto;
 }
 
 .look-section {
@@ -22,44 +22,35 @@
 
 .layout {
     display: flex;
-
     .layout-horizontal {
         display: flex;
         flex-direction: row;
     }
-
     .layout-total-center {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-
     .layout-centerandedges {
-      align-items: center;
-      justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
     }
-
     .layout-centervertical {
         align-items: center;
     }
-
     &.layout-huge {
         height: 700px;
     }
-
     &.layout-headline {
         height: 618px;
         width: 100%;
     }
-
 }
 
 .look-storyblock {
-
-  &.look-storyblock-side {
-    height: 100px;
-  }
-
+    &.look-storyblock-side {
+        height: 100px;
+    }
 }
 
 .look-contentsection {
@@ -75,6 +66,10 @@
 .layout-vertical {
     display: flex;
     flex-direction: column;
+}
+
+.layout-wrap {
+    flex-wrap: wrap;
 }
 
 .layout-vertical-center {
@@ -97,6 +92,14 @@
 
 .layout-small {
     height: 200px;
+}
+
+.layout-shmedium {
+    height: 235px;
+}
+
+.layout-widthshmedium {
+    width: 235px;
 }
 
 .layout-medium {
@@ -146,10 +149,12 @@
     left: 0;
 }
 
+
 /*
     Design weirdness. The last item in the second content section, has
     no border bottom.
 */
+
 .look-beautycontent {
     padding-bottom: 0;
     .look-storyblock:last-child {
@@ -163,4 +168,27 @@
 
 .look-nobottomborder {
     border-bottom: 0 !important;
+}
+
+.look-category-header {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.look-bottomcontent {
+    padding: 42px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.look-bottomcontent-main, .look-bottomcontent-side .storyblock:nth-child(odd) {
+    margin-right: 60px;
+}
+
+.look-bottomcontent-side-caption {
+    font-weight: bold;
+    margin-top: 24px;
 }

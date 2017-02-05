@@ -112,6 +112,12 @@ $alt-black: rgba(90, 90, 90, 1);
   font-weight: normal;
 }
 
+.look-text-headerbig {
+    font-family: font(header);
+    font-size: 48px;
+    font-weight: lighter;
+}
+
 .look-font-headerregular {
   font-family: font(header);
   font-size: 18px;

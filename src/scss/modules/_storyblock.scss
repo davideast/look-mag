@@ -15,7 +15,7 @@
 
   &.look-storyblock-content {
       box-sizing: border-box;
-      height: 395px;
+      min-height: 395px;
       padding: 40px 0;
 
       .storybox {
@@ -34,8 +34,13 @@
           padding: 0 0 24px 0;
       }
 
-      .look-sharecount .look-sharecount-image {
-          margin-right: 10px;
+      .look-sharecount {
+            cursor: pointer;
+
+            .look-sharecount-image {
+                cursor: pointer;
+                margin-right: 10px;
+            }
       }
 
   }

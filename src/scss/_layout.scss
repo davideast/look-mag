@@ -63,6 +63,11 @@
     justify-content: center;
 }
 
+.layout-leftalign-center {
+    display: flex;
+    align-items: center;
+}
+
 .layout-vertical {
     display: flex;
     flex-direction: column;
@@ -103,7 +108,7 @@
 }
 
 .layout-medium {
-    height: 310px;
+    min-height: 310px;
 }
 
 .layout-widthmedium {

@@ -171,6 +171,9 @@ a, a:visited {
   text-decoration: none;
   color: inherit; }
 
+.visually-hidden {
+  display: none; }
+
 .grid {
   max-width: 1170px;
   margin: 0 auto;
@@ -219,6 +222,10 @@ a, a:visited {
   align-items: center;
   justify-content: center; }
 
+.layout-leftalign-center {
+  display: flex;
+  align-items: center; }
+
 .layout-vertical {
   display: flex;
   flex-direction: column; }
@@ -251,7 +258,7 @@ a, a:visited {
   width: 235px; }
 
 .layout-medium {
-  height: 310px; }
+  min-height: 310px; }
 
 .layout-widthmedium {
   min-width: 395px; }
@@ -321,6 +328,49 @@ a, a:visited {
   font-weight: bold;
   margin-top: 24px; }
 
+@media (max-width: 1180px) {
+  .sidecontent {
+    display: none; }
+
+  .maincontent {
+    width: 100%;
+    padding-right: 0; } }
+@media (max-width: 1100px) {
+  .grid {
+    padding: 0 20px; }
+
+  .look-footer .look-footer-section {
+    width: 50%;
+    margin-right: 0; }
+    .look-footer .look-footer-section:first-child {
+      padding-right: 60px; }
+  .look-footer .look-footer-section-instagram {
+    display: none; } }
+@media (max-width: 860px) {
+  .header-social {
+    display: none; }
+
+  .headline .headline-caption {
+    width: 64vw !important; }
+
+  .layout-stacked {
+    flex-direction: column; }
+
+  .layout-stacked-margin {
+    margin-right: 0 !important;
+    margin-bottom: 40px; }
+
+  .look-footer-section {
+    width: 100% !important; } }
+@media (max-width: 550px) {
+  .navigation ul li {
+    padding-right: 10px !important; } }
+@media (max-width: 450px) {
+  .navigation {
+    display: none !important; }
+
+  .menuicon {
+    display: block !important; } }
 .storybox {
   background: #7d7e7d;
   position: relative; }
@@ -345,7 +395,7 @@ a, a:visited {
     margin-top: 15px; }
 .look-storyblock.look-storyblock-content {
   box-sizing: border-box;
-  height: 395px;
+  min-height: 395px;
   padding: 40px 0; }
   .look-storyblock.look-storyblock-content .storybox {
     margin-right: 40px; }
@@ -355,8 +405,11 @@ a, a:visited {
     padding: 24px 0; }
   .look-storyblock.look-storyblock-content .look-storyblock-content-para {
     padding: 0 0 24px 0; }
-  .look-storyblock.look-storyblock-content .look-sharecount .look-sharecount-image {
-    margin-right: 10px; }
+  .look-storyblock.look-storyblock-content .look-sharecount {
+    cursor: pointer; }
+    .look-storyblock.look-storyblock-content .look-sharecount .look-sharecount-image {
+      cursor: pointer;
+      margin-right: 10px; }
 
 .header {
   height: 200px;
@@ -390,6 +443,9 @@ a, a:visited {
 
 .social-divider {
   border-right: 1px solid var(--color-light); }
+
+.menuicon {
+  display: none; }
 
 .navigation {
   text-transform: uppercase;

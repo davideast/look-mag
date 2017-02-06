@@ -146,6 +146,12 @@ $alt-black: rgba(90, 90, 90, 1);
   line-height: 22px;
 }
 
+.look-subtitle {
+  font-family: font(smallcaps);
+  font-size: 13px;
+  color:white;
+}
+
 .look-subtitleborder {
   font-family: font(smallcaps);
   font-size: 13px;
@@ -170,4 +176,11 @@ $alt-black: rgba(90, 90, 90, 1);
   font-family: font(smallcaps);
   font-size: 10px;
   font-weight: bold;
+}
+
+.look-footer-header {
+  font-family: font(header);
+  font-size: 40px;
+  font-weight: lighter;
+  color: white;
 }

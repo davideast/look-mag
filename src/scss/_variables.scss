@@ -5,10 +5,14 @@ $colors:(
   light: #f0f0f0,
   dark: #202020,
   black-light: rgba(92, 92, 92, 1),
+  black-almost: rgba(17, 17, 17, 1),
+  black-almost-light: rgba(27, 27, 27, 1),
+  black-grey: rgba(36, 36, 36, 1),
+  black-grey-light: rgba(56, 56, 56, 1),
   red-accent: rgba(221, 75, 57, 1),
   grey-lighter: rgba(237, 237, 237, 1),
   grey-normal: rgba(242, 242, 242, 1),
-  grey-dark: rgba(188, 187, 187, 1)
+  grey-dark: rgba(188, 187, 187, 1),
 );
 $fonts:(
   header: 'bodoni-urw',

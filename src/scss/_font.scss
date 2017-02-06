@@ -3,6 +3,7 @@ $beauty: rgba(253, 136, 93, 1);
 $travel: rgba(73, 126, 206, 1);
 $celebrity: rgba(196, 9, 62, 1);
 $grey-lighter: rgba(188, 188, 188, 1);
+$grey-light: rgba(130, 130, 130, 1);
 $off-black: rgba(51, 51, 51, 1);
 $off-blacker: rgba(52, 52, 52, 1);
 $alt-black: rgba(90, 90, 90, 1);
@@ -19,6 +20,10 @@ $alt-black: rgba(90, 90, 90, 1);
 
   &.smallcaps-dark {
     color: $off-blacker;
+  }
+
+  &.smallcaps-grey {
+    color: $grey-light;
   }
 
   &.smallcaps-large {
@@ -118,6 +123,11 @@ $alt-black: rgba(90, 90, 90, 1);
     font-weight: lighter;
 }
 
+.look-text-headermedium {
+  font-family: font(header);
+  font-size: 17px;
+}
+
 .look-font-headerregular {
   font-family: font(header);
   font-size: 18px;
@@ -173,6 +183,13 @@ $alt-black: rgba(90, 90, 90, 1);
 
 .look-font-microcaps {
   color: rgba(188, 188, 188, 1);
+  font-family: font(smallcaps);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.look-font-microcaps-dark {
+  color: $grey-light;
   font-family: font(smallcaps);
   font-size: 10px;
   font-weight: bold;

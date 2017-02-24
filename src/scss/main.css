@@ -154,12 +154,10 @@
   color: white; }
 
 /* Base */
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0; }
+* {
+  box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, p {
+body, h1, h2, h3, h4, h5, p {
   margin: 0; }
 
 ul, li {
@@ -370,7 +368,10 @@ a, a:visited {
     display: none !important; }
 
   .menuicon {
-    display: block !important; } }
+    display: block !important; }
+
+  .layout-widthmedium {
+    min-width: 100%; } }
 .storybox {
   background: #7d7e7d;
   position: relative; }
